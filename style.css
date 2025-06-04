@@ -1,0 +1,70 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 960px; /* Limit container width for better readability */
+    background-color: #ffffff; /* White background for the main content */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem !important; /* Override Bootstrap's mt-5 if needed */
+    margin-bottom: 3rem;
+}
+
+h1 {
+    color: #343a40; /* Darker heading color */
+    font-weight: 600;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.generated-prompt-area {
+    background-color: #e9ecef; /* Slightly darker background for the prompt area */
+    min-height: 200px; /* Ensure enough space for the prompt */
+    position: relative; /* Needed for absolute positioning of the copy button */
+}
+
+#generatedPrompt {
+    resize: vertical; /* Allow vertical resize only */
+    background-color: #f8f9fa; /* Match body background */
+    border: 1px solid #ced4da;
+}
+
+#copyButton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#copyButton.btn-success {
+    background-color: #198754; /* Bootstrap success green */
+    border-color: #198754;
+    color: white;
+}
+
+pre {
+    white-space: pre-wrap; /* Wrap long lines in the pre tag */
+    word-wrap: break-word; /* Break words if necessary */
+    background-color: #f1f3f5 !important; /* Lighter background for pre */
+    border: 1px solid #dee2e6;
+    font-size: 0.85em; /* Slightly smaller font for the template */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row > div {
+        margin-bottom: 2rem; /* Add space between columns on smaller screens */
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
